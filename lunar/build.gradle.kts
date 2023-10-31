@@ -24,6 +24,7 @@ repositories {
     mavenCentral()
     maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
     maven{ url = uri("https://repo.dmulloy2.net/repository/public/") }
+    maven { url = uri("https://repo.lunarclient.dev") }
 }
 
 dependencies {
@@ -32,6 +33,7 @@ dependencies {
     implementation("com.google.inject:guice:5.1.0")
     implementation("org.reflections:reflections:0.10.2")
 
+    compileOnly("com.lunarclient:apollo-api:1.0.0")
     compileOnly("io.papermc.paper:paper-api:1.20.2-R0.1-SNAPSHOT")
     compileOnly("org.projectlombok:lombok:1.18.26")
     compileOnly("com.comphenix.protocol:ProtocolLib:5.1.0")

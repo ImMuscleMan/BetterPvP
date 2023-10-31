@@ -7,6 +7,7 @@ Repository containing all of BetterPvP's plugins for 1.20.2.
 - [MythicMobs](https://www.spigotmc.org/resources/mythicmobs.5702)
 - [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997)
 - [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81)
+- [Lunar Client Apollo](https://lunarclient.dev/apollo/downloads)
 
 
 ## Development Setup
