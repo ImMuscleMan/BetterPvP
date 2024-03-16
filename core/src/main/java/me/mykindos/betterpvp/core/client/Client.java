@@ -7,7 +7,6 @@ import me.mykindos.betterpvp.core.Core;
 import me.mykindos.betterpvp.core.client.gamer.Gamer;
 import me.mykindos.betterpvp.core.client.properties.ClientPropertyUpdateEvent;
 import me.mykindos.betterpvp.core.framework.customtypes.IMapListener;
-import me.mykindos.betterpvp.core.framework.events.scoreboard.ScoreboardUpdateEvent;
 import me.mykindos.betterpvp.core.properties.PropertyContainer;
 import me.mykindos.betterpvp.core.redis.CacheObject;
 import me.mykindos.betterpvp.core.utilities.UtilServer;
@@ -57,14 +56,8 @@ public class Client extends PropertyContainer implements IMapListener, CacheObje
     }
 
     @Override
-    public void saveProperty(String key, Object object, boolean updateScoreboard) {
+    public void saveProperty(String key, Object object) {
         properties.put(key, object);
-        if (updateScoreboard) {
-            Player player = Bukkit.getPlayer(UUID.fromString(getUuid()));
-            if (player != null) {
-                UtilServer.callEvent(new ScoreboardUpdateEvent(player));
-            }
-        }
     }
 
     @Override

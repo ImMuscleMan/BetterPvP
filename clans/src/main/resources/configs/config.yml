@@ -27,9 +27,9 @@ clans:
       level: 1
       points: 0
 server:
-  isHub: false
   sidebar:
     title: BetterPvP
+    enabled: true
   world:
     fastNightCycle: true
     mainWorld: world
